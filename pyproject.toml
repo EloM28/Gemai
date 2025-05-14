@@ -1,0 +1,20 @@
+[project]
+name = "gemai"
+requires-python = ">=3.10"
+version = "0.1.0"
+description = "Gemini integration"
+readme = "README.md"
+authors = ["MUGISHA Eloge <mugisheloge@gmail.com"]
+dynamic = ["dependencies"]
+
+[project.scripts]
+start-gemai = "gemai.app:main"
+[build-system]
+requires= ["setuptools", "setuptools-scm"]
+build-backend = "setup-tools.build_meta"
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"]}
+
+[project.urls]
+repository = "https://github.com/EloM28/Gemai"
