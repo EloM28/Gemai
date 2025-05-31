@@ -1,8 +1,8 @@
 def main():
-    try:
-        from .local_settings import API_KEY
-    except ImportError:
-        ...
+    # try:
+    #     from .local_settings import API_KEY
+    # except ImportError:
+    #     ...
 
     import google.generativeai as genai
     
