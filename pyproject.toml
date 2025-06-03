@@ -4,7 +4,10 @@ requires-python = ">=3.8"
 version = "0.1.0"
 description = "Gemini integration"
 readme = "README.md"
-authors = ["MUGISHA Eloge <mugisheloge@gmail.com"]
+authors = [
+    { name = "MUGISHA Eloge", email = "mugisheloge@gmail.com" }
+   
+    ]
 dynamic = ["dependencies"]
 
 [project.scripts]
@@ -12,7 +15,7 @@ start-gemai = "gemai.app:main"
 
 [build-system]
 requires= ["setuptools", "setuptools-scm"]
-build-backend = "setup-tools.build_meta"
+build-backend = "setuptools.build_meta"
 
 [tool.setuptools.dynamic]
 dependencies = { file = ["requirements.txt"]}
